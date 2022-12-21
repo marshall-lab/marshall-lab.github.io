@@ -1738,6 +1738,8 @@ figure img, figure iframe, figure .fluid-width-video-wrapper { margin-bottom: 0.
 
 .mfp-counter { font-family: "Assistant", "Roboto", "Helvetica Neue", "Lucida Grande", Lato, -apple-system, BlinkMacSystemFont, Arial, sans-serif; font-size: 0.9em; }
 
+iframe { width: 100% !important; height: calc(width * 0.75) !important; }
+
 html { font-size: 14px; }
 
 @media (min-width: 48em) { html { font-size: 16px; } }
