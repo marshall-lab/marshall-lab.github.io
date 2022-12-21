@@ -1,0 +1,673 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    
+    
+    <!-- Load jQuery -->
+<script src="/assets/js/vendor/jquery/jquery.min.js" type="text/javascript"></script>
+
+
+  <!-- Make a list of header images -->
+  <!-- init the list -->
+  
+
+  <!-- loop and add -->
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  <!--
+    Javascript and Liquid code to gather a list of all header images
+    in /assets/images/headers/
+  -->
+  <script type="text/javascript">
+    // get images from ``header_images`` array to js var
+    var header_images = [
+      
+        "/assets/images/headers/cropped-hairy-1.jpg",
+      
+        "/assets/images/headers/cropped-mir7-gal4.jpg",
+      
+        "/assets/images/headers/cropped-worniu-gal4_800.jpg",
+      
+        "/assets/images/headers/elav.jpg",
+      
+        "/assets/images/headers/gliaflpmod.jpg",
+      
+    ];
+
+    var randomIndex = Math.floor(Math.random() * header_images.length);
+
+    // and the winning ``header_image`` is...
+    var header_image = header_images[randomIndex]
+    console.log( header_image )
+
+    // image without overlay
+    
+      // make sure overlay filter is handled correctly
+      
+
+      $(document).ready(function() {
+        $(".page__hero--overlay").attr('style',  ' background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(' + header_image + ')');
+       });
+
+    
+  </script>
+
+
+<meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>The Marshall lab</title>
+<meta name="description" content="Epigenetics and systems biology of the brain">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="The Marshall lab">
+<meta property="og:title" content="The Marshall lab">
+<meta property="og:url" content="https://marshall-lab.github.io/changelog.html">
+
+
+  <meta property="og:description" content="Epigenetics and systems biology of the brain">
+
+
+
+  <meta property="og:image" content="https://marshall-lab.github.io/random">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://marshall-lab.github.io/changelog.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Owen Marshall",
+      "url": "https://marshall-lab.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="The Marshall lab Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="damidseq_pipeline">
+<meta itemprop="description" content="An automated pipeline for processing DamID-seq datasets">
+<meta itemprop="image" content="http://owenjm.github.io/damidseq_pipeline/images/header.jpg">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://owenjm.github.io/damidseq_pipeline">
+<meta property="og:type" content="website">
+<meta property="og:title" content="damidseq_pipeline">
+<meta property="og:description" content="An automated pipeline for processing DamID-seq datasets">
+<meta property="og:image" content="http://owenjm.github.io/damidseq_pipeline/images/header.jpg">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="damidseq_pipeline">
+<meta name="twitter:description" content="An automated pipeline for processing DamID-seq datasets">
+<meta name="twitter:image" content="http://owenjm.github.io/damidseq_pipeline/images/header.jpg">
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ssets/images/favicon-16x16.png">
+<link rel="manifest" href="assets/images/site.webmanifest">
+<link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="assets/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="assets/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+	
+	
+	
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/random');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          The Marshall lab
+
+        
+      </h1>
+      
+        <p class="page__lead">Epigenetics and systems biology of the brain
+</p>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+ <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+ 
+
+<div class="masthead sticky">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/"></a>
+        <ul class="visible-links">
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/index.html">About the lab</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="dropdown ">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources    <i class="fa fa-angle-down" aria-hidden="true"></i><span class="caret"></span></a>
+                        <ul class="dropdown-content">
+                            
+                                <li>
+                                    <a href="/tada.html">    Targeted DamID</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/flyorf-tada.html">    FlyORF-TaDa</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/analysis.html">    Software and analysis</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/images.html">Images</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/publications.html">Publications</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/people.html">People</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/positions.html">Positions</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                
+            
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <meta itemprop="description" content="Epigenetics and systems biology of the brain">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h2 id="v153">v1.5.3</h2>
+<ul>
+  <li>New feature: <code class="language-plaintext highlighter-rouge">--coverage</code> flag outputs coverage bedGraph track of each sample (useful with Dam-only tracks for CATaDa analysis).  <code class="language-plaintext highlighter-rouge">--just_coverage</code> exits after coverage tracks are written.</li>
+  <li>New feature: Kernel density normalisation routines sped up ~10x via Inline::C.  This is enabled by default, but will only work if the Inline::C module is installed; damidseq_pipeline will fall back on the Perl coded routine if this is not present.  If you want to control explicitly, do so via the <code class="language-plaintext highlighter-rouge">--kde_inline</code> flag.</li>
+  <li>New feature: ChIP-seq-specific processing routines added: <code class="language-plaintext highlighter-rouge">--remdups</code> removes PCR duplicates, <code class="language-plaintext highlighter-rouge">--unique</code> only maps unique reads.  Enable all of these with <code class="language-plaintext highlighter-rouge">--chipseq</code> (also turns of GATC-level binning, GATC-based read extension and will only output coverage tracks not ratios)</li>
+  <li>New feature: New normalisation method, “rawbins”.  This writes the normalisation data to TSV format and runs a user-provided script for custom normalisation.  Your script should read the data file and output the normalisation factor.  Advanced users only, use with caution.</li>
+  <li>New feature: consider all occupancy as RPM (reads per million mapped reads), set as default.  Control with <code class="language-plaintext highlighter-rouge">--scores_as_rpm</code> flag.</li>
+  <li>Changed: bowtie2 command handling refactored more elegantly</li>
+  <li>Added: ability to add custom flags to bowtie2 command with <code class="language-plaintext highlighter-rouge">--bowtie2_add_flags</code></li>
+  <li>Fixed: small changes to read mapping code for more accurate mapping</li>
+  <li>Changed: filename filters are now turned off by default (use <code class="language-plaintext highlighter-rouge">--no_file_filters=0</code> to turn back on)</li>
+</ul>
+
+<h2 id="v146">v1.4.6</h2>
+<ul>
+  <li>New feature: paired-end reads are now handled natively at the fastq level.  Use the –paired flag to enable, and your paired reads should be automagically detected and aligned</li>
+  <li>Changed: BAM file format is now used natively without SAM intermediates at all levels (also fixes the recent samtools version handling bug)</li>
+  <li>Changed: paired-end reads are selected based on the 0x2 bit on the SAM file format bitwise FLAG (reads aligned in proper pair)</li>
+  <li>Fixed: paired-end read counts are enumerated correctly</li>
+  <li>Removed: –keep_sam and –only_sam flags (as SAM format is no longer used)</li>
+  <li>Added: –keep_original_bams flag to retain the non-extended reads BAM file when using single-end sequencing</li>
+  <li>Changed: warning on missing chromosomal identities in GATC alignment made more friendly and less confusing</li>
+</ul>
+
+<h2 id="v145">v1.4.5</h2>
+<ul>
+  <li>Added –ps_debug option to explicitly display pseudocounts calculation</li>
+</ul>
+
+<h2 id="v144">v1.4.4</h2>
+<ul>
+  <li>Fixed issue with some externally-generated BAM files</li>
+</ul>
+
+<h2 id="v143">v1.4.3</h2>
+<ul>
+  <li>Better handling of chromosome names</li>
+</ul>
+
+<h2 id="v142">v1.4.2</h2>
+<ul>
+  <li>Small improvements to SAM file handling</li>
+</ul>
+
+<h2 id="v141">v1.4.1</h2>
+<ul>
+  <li>Fixed issues with samtools v1.3 (this version of samtools introduced backwards incompatibilities when using the ‘sort’ function.  damidseq_pipeline now checks for the version number and should support all versions of samtools.)</li>
+</ul>
+
+<h2 id="v14">v1.4</h2>
+<ul>
+  <li>New read-extension method: by default, reads are now only extended as far as the next GATC fragment.  Use –extension_method=full to disable this feature and extend every read by the value of –len.</li>
+  <li>Output format is now bedgraph by default.  Use –output_format=gff to restore the previous default.  Changing the default to bedgraph allows users to create TDF tracks directly within the graphical IGV tools, making it easier for end users.</li>
+  <li>Minor code cleanups</li>
+</ul>
+
+<h2 id="v13">v1.3</h2>
+<ul>
+  <li>Major bugfix: reads from the minus strand were not being extended correctly during processing.  The overall impact is minor (correlation between old and new read extension methods is &gt;0.95) but this new method is technically more accurate.</li>
+  <li>added –keep_sam (do not delete the temporary SAM file) option</li>
+  <li>added –only_sam (do not generate BAM files) option (both options are intended for debug purposes only)</li>
+</ul>
+
+<h2 id="v127">v1.2.7</h2>
+<ul>
+  <li>New opition –no_file_filters to prevent any filename trimming/filtering (by default input filenames are trimmed to the first underscore)</li>
+  <li>Small filename issue fixes</li>
+</ul>
+
+<h2 id="v126">v1.2.6</h2>
+<ul>
+  <li>Now uses File::Basename to handle filenames</li>
+  <li>Fixed/cleaned up a number of rare problems with filename handling</li>
+</ul>
+
+<h2 id="v125">v1.2.5</h2>
+<ul>
+  <li>Added –dam and –out_name options.  Use these to set the Dam-only control sample and/or a custom output name</li>
+  <li>Added more sanity checks</li>
+  <li>Minor bugfixes</li>
+</ul>
+
+<h2 id="v124">v1.2.4</h2>
+<ul>
+  <li>Added explicit checks for bowtie2 and samtools executables, and for bowtie2 output</li>
+</ul>
+
+<h2 id="v123">v1.2.3</h2>
+<ul>
+  <li>Fixed a serious error in RPM normalisation calculations (values were inverted) – please re-run on your samples if you have used this method on them</li>
+  <li>Minor code cleanups</li>
+</ul>
+
+<h2 id="v121">v1.2.1</h2>
+<ul>
+  <li>Added ability to process BAM files generated from paired-end sequencing</li>
+  <li>Cleaner reporting of missing assembly fragments in GATC files</li>
+  <li>Some small bugs fixed</li>
+  <li>General code clean-ups</li>
+</ul>
+
+<h2 id="v12">v1.2</h2>
+<ul>
+  <li>Completely re-written normalisation routine based on kernel density estimation</li>
+  <li>Genomic coverage is now calculated internally rather than using bedtools (uses much less memory, is slightly faster, and drops the requirement for an external binned windows file)</li>
+  <li>Binned window files are no longer required (bins are calculated automatically using the sequence information provided in the BAM headers, and the bin size specified by the –bins command-line option)</li>
+  <li>Better handling of GATC fragment files (should prevent hangs/pauses when creating GATC fragment arrays)</li>
+  <li>Memory optimisation for large files (greatly reduces usage for processing mouse/human data)</li>
+  <li>Added ability to process BAM files directly</li>
+  <li>Much better file-handling all round (now takes sample names directly from filenames by default; the option to use an index.txt file remains but is essentially deprecated)</li>
+  <li>New option: –norm_method=## kde/rpm  “kde” is the default method using kernel density estimation; “rpm” normalises solely on readcounts/million reads only (the “rpm” method is not recommended except for the very rare cases in which a Dam-fusion protein fails to methylate accessible genomic regions, making kde normalisation is inappropriate)</li>
+  <li>Re-written –help output rountines (better formatted and more informative)</li>
+  <li>Ability to read gzipped GATC files</li>
+  <li>Ability to save sets of defaults to enable quick switching between different genomes  (use –save_defaults=## name; use –load_defaults=## name to load; use load_defaults=list to list current available options)</li>
+  <li>New location for config files (in ~/.config/damid_pipeline/).  Existing config file will be migrated automatically</li>
+  <li>Various small bugfixes and code clean-ups</li>
+</ul>
+
+<p>** NB: a number of default parameters have changed with this release.  It is strongly advised to reset all parameters to the default value with –reset_defaults.</p>
+
+<h2 id="v10">v1.0</h2>
+<ul>
+  <li>Initial release</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/OMarshall_lab" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/owenjm" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Owen Marshall. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

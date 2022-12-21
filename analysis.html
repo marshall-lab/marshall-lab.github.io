@@ -1,0 +1,564 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    
+    
+    <!-- Load jQuery -->
+<script src="/assets/js/vendor/jquery/jquery.min.js" type="text/javascript"></script>
+
+
+  <!-- Make a list of header images -->
+  <!-- init the list -->
+  
+
+  <!-- loop and add -->
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  <!--
+    Javascript and Liquid code to gather a list of all header images
+    in /assets/images/headers/
+  -->
+  <script type="text/javascript">
+    // get images from ``header_images`` array to js var
+    var header_images = [
+      
+        "/assets/images/headers/cropped-hairy-1.jpg",
+      
+        "/assets/images/headers/cropped-mir7-gal4.jpg",
+      
+        "/assets/images/headers/cropped-worniu-gal4_800.jpg",
+      
+        "/assets/images/headers/elav.jpg",
+      
+        "/assets/images/headers/gliaflpmod.jpg",
+      
+    ];
+
+    var randomIndex = Math.floor(Math.random() * header_images.length);
+
+    // and the winning ``header_image`` is...
+    var header_image = header_images[randomIndex]
+    console.log( header_image )
+
+    // image without overlay
+    
+      // make sure overlay filter is handled correctly
+      
+
+      $(document).ready(function() {
+        $(".page__hero--overlay").attr('style',  ' background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(' + header_image + ')');
+       });
+
+    
+  </script>
+
+
+<meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>The Marshall lab</title>
+<meta name="description" content="Epigenetics and systems biology of the brain">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="The Marshall lab">
+<meta property="og:title" content="The Marshall lab">
+<meta property="og:url" content="https://marshall-lab.github.io/analysis.html">
+
+
+  <meta property="og:description" content="Epigenetics and systems biology of the brain">
+
+
+
+  <meta property="og:image" content="https://marshall-lab.github.io/random">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://marshall-lab.github.io/analysis.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Owen Marshall",
+      "url": "https://marshall-lab.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="The Marshall lab Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="damidseq_pipeline">
+<meta itemprop="description" content="An automated pipeline for processing DamID-seq datasets">
+<meta itemprop="image" content="http://owenjm.github.io/damidseq_pipeline/images/header.jpg">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://owenjm.github.io/damidseq_pipeline">
+<meta property="og:type" content="website">
+<meta property="og:title" content="damidseq_pipeline">
+<meta property="og:description" content="An automated pipeline for processing DamID-seq datasets">
+<meta property="og:image" content="http://owenjm.github.io/damidseq_pipeline/images/header.jpg">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="damidseq_pipeline">
+<meta name="twitter:description" content="An automated pipeline for processing DamID-seq datasets">
+<meta name="twitter:image" content="http://owenjm.github.io/damidseq_pipeline/images/header.jpg">
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ssets/images/favicon-16x16.png">
+<link rel="manifest" href="assets/images/site.webmanifest">
+<link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="assets/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="assets/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+	
+	
+	
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/random');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          The Marshall lab
+
+        
+      </h1>
+      
+        <p class="page__lead">Epigenetics and systems biology of the brain
+</p>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+ <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+ 
+
+<div class="masthead sticky">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/"></a>
+        <ul class="visible-links">
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/index.html">About the lab</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="dropdown ">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources    <i class="fa fa-angle-down" aria-hidden="true"></i><span class="caret"></span></a>
+                        <ul class="dropdown-content">
+                            
+                                <li>
+                                    <a href="/tada.html">    Targeted DamID</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/flyorf-tada.html">    FlyORF-TaDa</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/analysis.html">    Software and analysis</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/images.html">Images</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/publications.html">Publications</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/people.html">People</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/positions.html">Positions</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                
+            
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <meta itemprop="description" content="Epigenetics and systems biology of the brain">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h1 id="software-and-analysis">Software and analysis</h1>
+<p>Our research combines wet-lab research with bioinformatic analysis.  All code is open-source and is freely available from <a href="http://github.com">github</a>.</p>
+
+<h2 id="featured-software">Featured software</h2>
+<h3 id="damidseq_pipeline"><a href="http://owenjm.github.io/damidseq_pipeline">damidseq_pipeline</a></h3>
+<p>The damidseq_pipeline software provides automatic alignment, read-extension, normalisation and background reduction for DamID-seq datasets.</p>
+
+<h3 id="poliigenecall"><a href="http://github.com/owenjm/polii.gene.call">polii.gene.call</a></h3>
+<p>The polii.gene.call script will call genes with significantly enriched RNA pol II occupancy.  It is designed for use with Targeted DamID RNA pol II datasets.</p>
+
+<h3 id="find_peaks"><a href="http://github.com/owenjm/find_peaks">find_peaks</a></h3>
+<p>find_peaks is a simple yet robust FDR peak caller.  It was designed for use with DamID-seq datasets, but can be used on any file in bedgraph format (including ChIP-seq data).</p>
+
+<h2 id="miscellaneous-code">Miscellaneous code</h2>
+<p>For more information and downloads, please visit <a href="http://github.com/owenjm">Owen’s github site</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/OMarshall_lab" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/owenjm" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Owen Marshall. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

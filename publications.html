@@ -1,0 +1,598 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    
+    
+    <!-- Load jQuery -->
+<script src="/assets/js/vendor/jquery/jquery.min.js" type="text/javascript"></script>
+
+
+  <!-- Make a list of header images -->
+  <!-- init the list -->
+  
+
+  <!-- loop and add -->
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  <!--
+    Javascript and Liquid code to gather a list of all header images
+    in /assets/images/headers/
+  -->
+  <script type="text/javascript">
+    // get images from ``header_images`` array to js var
+    var header_images = [
+      
+        "/assets/images/headers/cropped-hairy-1.jpg",
+      
+        "/assets/images/headers/cropped-mir7-gal4.jpg",
+      
+        "/assets/images/headers/cropped-worniu-gal4_800.jpg",
+      
+        "/assets/images/headers/elav.jpg",
+      
+        "/assets/images/headers/gliaflpmod.jpg",
+      
+    ];
+
+    var randomIndex = Math.floor(Math.random() * header_images.length);
+
+    // and the winning ``header_image`` is...
+    var header_image = header_images[randomIndex]
+    console.log( header_image )
+
+    // image without overlay
+    
+      // make sure overlay filter is handled correctly
+      
+
+      $(document).ready(function() {
+        $(".page__hero--overlay").attr('style',  ' background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(' + header_image + ')');
+       });
+
+    
+  </script>
+
+
+<meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>The Marshall lab</title>
+<meta name="description" content="Epigenetics and systems biology of the brain">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="The Marshall lab">
+<meta property="og:title" content="The Marshall lab">
+<meta property="og:url" content="https://marshall-lab.github.io/publications.html">
+
+
+  <meta property="og:description" content="Epigenetics and systems biology of the brain">
+
+
+
+  <meta property="og:image" content="https://marshall-lab.github.io/random">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://marshall-lab.github.io/publications.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Owen Marshall",
+      "url": "https://marshall-lab.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="The Marshall lab Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="damidseq_pipeline">
+<meta itemprop="description" content="An automated pipeline for processing DamID-seq datasets">
+<meta itemprop="image" content="http://owenjm.github.io/damidseq_pipeline/images/header.jpg">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://owenjm.github.io/damidseq_pipeline">
+<meta property="og:type" content="website">
+<meta property="og:title" content="damidseq_pipeline">
+<meta property="og:description" content="An automated pipeline for processing DamID-seq datasets">
+<meta property="og:image" content="http://owenjm.github.io/damidseq_pipeline/images/header.jpg">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="damidseq_pipeline">
+<meta name="twitter:description" content="An automated pipeline for processing DamID-seq datasets">
+<meta name="twitter:image" content="http://owenjm.github.io/damidseq_pipeline/images/header.jpg">
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ssets/images/favicon-16x16.png">
+<link rel="manifest" href="assets/images/site.webmanifest">
+<link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="assets/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="assets/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+	
+	
+	
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/random');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          The Marshall lab
+
+        
+      </h1>
+      
+        <p class="page__lead">Epigenetics and systems biology of the brain
+</p>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+ <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+ 
+
+<div class="masthead sticky">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/"></a>
+        <ul class="visible-links">
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/index.html">About the lab</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="dropdown ">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources    <i class="fa fa-angle-down" aria-hidden="true"></i><span class="caret"></span></a>
+                        <ul class="dropdown-content">
+                            
+                                <li>
+                                    <a href="/tada.html">    Targeted DamID</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/flyorf-tada.html">    FlyORF-TaDa</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/analysis.html">    Software and analysis</a>
+                                </li>
+                            
+                        </ul>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/images.html">Images</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/publications.html">Publications</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/people.html">People</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/positions.html">Positions</a>
+                    </li>
+                
+            
+                
+                
+                    <li class="masthead__menu-item">
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                
+            
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <meta itemprop="description" content="Epigenetics and systems biology of the brain">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h3 id="2022">2022</h3>
+
+<p>Delandre C, McMullen JPD, Paulsen J, Collas P, Marshall OJ. Eight principal chromatin states functionally segregate the fly genome into developmental and housekeeping roles. <em>bioRxiv</em> 2022.10.30.514435; doi: <a href="https://doi.org/10.1101/2022.10.30.514435.">https://doi.org/10.1101/2022.10.30.514435.</a> [<a href="https://www.biorxiv.org/content/10.1101/2022.10.30.514435v1.abstract">link</a>]</p>
+
+<p>Veen K, Froldi F, Dong Q, Alvarez-Ochoa E, Nguyen P-K, Harvey KF, McMullen JPD, Marshall OJ, Jusuf PR, Cheng LY. Cell cycle and temporal transcription factors regulate proliferation and neuronal diversity of dedifferentiation-derived neural stem cells. <em>bioRxiv</em> 2022.07.24.501087; doi: <a href="https://doi.org/10.1101/2022.07.24.501087">https://doi.org/10.1101/2022.07.24.501087</a> [<a href="https://www.biorxiv.org/content/10.1101/2022.07.24.501087v1.abstract">link</a>]</p>
+
+<p>Heng JIT, Viti L, Pugh K, Marshall OJ, Agostino M. (2022) Understanding the impact of ZBTB18 missense variation on transcription factor function in neurodevelopment and disease. Journal of Neurochemistry 161 (3), 219-235.</p>
+
+<p>Marshall OJ &amp; Delandre C. (2022) Profiling Protein–DNA Interactions Cell-Type-Specifically with Targeted DamID. In: Horsfield, J., Marsman, J. (eds) Chromatin. Methods in Molecular Biology, vol 2458. Humana, New York, NY. <a href="https://doi.org/10.1007/978-1-0716-2140-0_11">https://doi.org/10.1007/978-1-0716-2140-0_11</a> [<a href="https://link.springer.com/protocol/10.1007/978-1-0716-2140-0_11">link</a>]</p>
+
+<h3 id="2021">2021</h3>
+
+<p>Díaz-Torres A, Rosales-Nieves AE, Pearson JR, Santa-Cruz Mateos C, Marín-Menguiano M, Marshall OJ, Brand AH and González-Reyes A. (2021) Stem cell niche organisation in the Drosophila ovary requires the ECM component Perlecan. <em>Curr Biol</em>, 31 (8), 1744-1753. e5. [<a href="https://www.sciencedirect.com/science/article/pii/S0960982221001366">link</a>]</p>
+
+<p>Hatch HAM, Belalcazar HM, Marshall OJ &amp; Secombe J. (2021) A KDM5–Prospero transcriptional axis functions during early neurodevelopment to regulate mushroom body formation <em>eLife</em>. <strong>10</strong>: e63886  [<a href="https://elifesciences.org/articles/63886">link</a>]</p>
+
+<p>Aughey GN, Delandre C, McMullen JPD, Southall TD &amp; Marshall OJ. (2021) FlyORF-TaDa allows rapid generation of new lines for <em>in vivo</em> cell-type specific profiling of protein-DNA interactions in <em>Drosophila melanogaster.</em> <em>G3.</em> <strong>11</strong> (1): jkaa005 [<a href="https://academic.oup.com/g3journal/advance-article/doi/10.1093/g3journal/jkaa005/6044134">link</a>]</p>
+
+<h3 id="2020">2020</h3>
+
+<p>Zaytseva O, Mitchell NC, Delandre C, Nie Z, Evers M, Werner JK, Lis JT, Hannan RD, Levens DL, Marshall OJ &amp; Quinn LM, 2020. Psi promotes <em>Drosophila</em> wing growth through transcriptional repression of key developmental networks. <em>bioRxiv</em>. <a href="https://doi.org/10.1101/2020.05.13.094664">https://doi.org/10.1101/2020.05.13.094664</a> [<a href="https://www.biorxiv.org/content/biorxiv/early/2020/10/09/2020.10.09.324939.full.pdf">link</a>]</p>
+
+<p>Delandre C, McMullen JPD &amp; Marshall OJ. (2020) Membrane-bound GFP-labelled vectors for Targeted DamID allow simultaneous profiling of expression domains and DNA binding. <em>bioRxiv</em>. <a href="https://doi.org/10.1101/2020.04.17.045948">https://doi.org/10.1101/2020.04.17.045948</a> [<a href="https://www.biorxiv.org/content/10.1101/2020.04.17.045948v1.full-text">link</a>]</p>
+
+<p>Jefferies G, Somers J, Lohrey I, Chaturvedi V, Calabria J, Marshall OJ, Southall TD, Saint R &amp; Murray MJ. (2020) Maintenance of cell fate by the Polycomb group gene sex combs extra enables a partial epithelial mesenchymal transition in <em>Drosophila. G3.</em> <strong>10</strong>: 4459-4471. [<a href="https://academic.oup.com/g3journal/article/10/12/4459/6048681">link</a>]</p>
+
+<p>Zaytseva O, Mitchell NC, Guo L, Marshall OJ, Parsons LM, Hannan RD, Levens, David L, Quinn LM. (2020) Transcriptional repression of Myc underlies AGO1's tumour suppressor function. <em>Development</em>. 147, dev190231. [<a href="https://dev.biologists.org/content/develop/147/11/dev190231.full.pdf">link</a>]</p>
+
+<h3 id="2019-and-earlier">2019 and earlier</h3>
+
+<p>Gervais L, Van Den Beek M, Josserand M, Sallé J, Stefanutti M, Perdigoto CN, Skorski P, Mazouni K, Marshall OJ, Brand AH, Schweisguth F and Bardin AJ. (2019) Stem cell proliferation is kept in check by the chromatin regulators Kismet/CHD7 and Trr/MLL3/4. <em>Dev Cell.</em> <strong>49</strong>: 556–573. [<a href="https://www.cell.com/developmental-cell/fulltext/S1534-5807(19)30330-2">link</a>]</p>
+
+<p>Delandre C and Marshall OJ.  (2019) United colours of chromatin? Developmental genome organisation in flies. <em>Biochem Soc Trans.</em> DOI: 10.1042/BST20180605. [<a href="http://www.biochemsoctrans.org/content/early/2019/03/21/BST20180605">link</a>]</p>
+
+<p>Doupé DP, Marshall OJ, Dayton H, Brand AH and Perrimon N. (2018) Drosophila intestinal stem and progenitor cells are major sources and regulators of homeostatic niche signals. <em>PNAS</em>. <strong>115</strong>(48): 12218-12223. [<a href="https://www.pnas.org/content/115/48/12218">link</a>]</p>
+
+<p>Marshall OJ and Brand AH. (2017) Chromatin state changes during neural development revealed by <em>in vivo</em> cell-type specific profiling.  <em>Nature Communications</em>.  <strong>8</strong>: 2271. [<a href="https://www.nature.com/articles/s41467-017-02385-4">link</a>]</p>
+
+<p>Marshall OJ<strong>*</strong>, Southall TD<strong>*</strong>, Cheetham SW, Brand AH. (2016) Cell-type specific profiling of protein-DNA interactions with TaDa. <em>Nature Protocols</em>. <strong>11</strong>:1586–98 [<a href="https://www.nature.com/articles/nprot.2016.084">link</a>]</p>
+
+<p>Marshall OJ and Brand AH. (2015) damidseq_pipeline: an automated pipeline for processing DamID sequencing datasets. <em>Bioinformatics</em>. <strong>31</strong>:3371-3 [<a href="https://academic.oup.com/bioinformatics/article/31/20/3371/196153">link</a>]</p>
+
+<p>Garsed DW<strong>*</strong>, Marshall OJ<strong>*</strong>, Corbin VD<strong>*</strong>, Hsu A<strong>*</strong>, Di Stefano L, Schröder J, Li J, Feng ZP, Kim BW, Kowarsky M, Lansdell B, Brookwell R, Myklebost O, Meza-Zepeda L, Holloway AJ, Pedeutour F, Choo KH, Damore MA, Deans AJ, Papenfuss AT, Thomas DM. (2014) The architecture and evolution of cancer neochromosomes. <em>Cancer Cell</em>. <strong>26</strong>:653-67 [<a href="http://www.sciencedirect.com/science/article/pii/S1535610814003730">link</a>]</p>
+
+<p>Southall TD, Gold KS, Egger B, Davidson CM, Caygill EE, Marshall OJ, Brand AH. (2013) Cell-type-specific profiling of gene expression and chromatin binding without cell isolation: assaying RNA Pol II occupancy in neural stem cells. <em>Dev Cell</em>. <strong>26</strong>:101-12</p>
+
+<p><a href="https://scholar.google.com/citations?user=TTBdIWkAAAAJ&amp;hl=en">All of Owen’s publications</a> (Google Scholar)</p>
+
+<p>(<strong>*</strong> denotes equal contribution)</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/OMarshall_lab" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/owenjm" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Owen Marshall. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
