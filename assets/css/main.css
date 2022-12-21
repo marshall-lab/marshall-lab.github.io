@@ -1748,7 +1748,7 @@ html { font-size: 14px; }
 
 @media (min-width: 80em) { html { font-size: 16px; } }
 
-@media screen and (min-width: 0em) { .page__hero--overlay .wrapper { padding-left: 2em; padding-right: 2em; } .masthead__inner-wrap { padding-left: 0em; padding-right: 0em; } .page { float: right; width: calc(100% - 1em); padding-right: 1em; } }
+@media screen and (min-width: 0em) { .page__hero--overlay .wrapper { padding-left: 2em; padding-right: 2em; } .masthead__inner-wrap { padding-left: 0em; padding-right: 1em; } .page { float: right; width: calc(100% - 1em); padding-right: 1em; } }
 
 @media screen and (min-width: 22em) { .page__hero--overlay .wrapper { padding-left: 3em; padding-right: 3em; } .masthead__inner-wrap { padding-left: 1em; padding-right: 1em; } .page { float: right; width: 100%; padding-right: 5%; padding-left: 5%; } }
 
