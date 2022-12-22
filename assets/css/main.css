@@ -1740,7 +1740,7 @@ figure img, figure iframe, figure .fluid-width-video-wrapper { margin-bottom: 0.
 
 iframe { width: 100% !important; height: calc(width * 0.75) !important; }
 
-html { font-size: 14px; }
+html { scroll-padding-top: 65px; /* compensate for the navigation bar height */ scroll-behavior: smooth; font-size: 14px; }
 
 @media (min-width: 48em) { html { font-size: 16px; } }
 
