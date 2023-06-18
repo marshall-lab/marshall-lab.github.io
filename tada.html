@@ -503,7 +503,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
-              <ul class="toc__menu"><li><a href="#targeted-damid-tada">Targeted DamID (TaDa)</a><ul><li><a href="#tada-protocol">TaDa protocol</a></li><li><a href="#tada-vectors">TaDa vectors</a></li><li><a href="#notes-on-data-representation">Notes on data representation</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#targeted-damid-tada">Targeted DamID (TaDa)</a><ul><li><a href="#tada-protocol">TaDa protocol</a></li><li><a href="#tada-vectors">TaDa vectors</a></li><li><a href="#tada-extensions">TaDa extensions</a></li><li><a href="#notes-on-data-representation">Notes on data representation</a></li></ul></li></ul>
 
             </nav>
           </aside>
@@ -518,13 +518,13 @@
 
 <p>TaDa combines DamID with the GAL4 system in <em>Drosophila</em>, allowing Dam-fusion proteins to be expressed only in specific cell-types at precise temporal windows.  TaDa is simple, robust, sensitive and highly reproducible, and works over a wide variety of different cell types and conditions.  A further advantage of TaDa is that Dam-fusion proteins are expressed at almost undetectable levels such that cell fate remains unaffected.</p>
 
-<p>Something that we don’t tend to discuss in our published methods: TaDa is also extraordinarily easy to use. It requires no antibody purification steps or cell sorting, is highly reproducible and works pretty much every single time. TaDa requires only the most basic familiarity in molecular biology to perform: if you can do a restriction enzyme digest and a PCR reaction, you already know all you need to perform TaDa.</p>
-
 <h2 id="tada-protocol">TaDa protocol</h2>
 
 <p>Our current lab protocol for TaDa can be found in <a href="https://marshall-lab.github.io/assets/files/Marshall-and-Delandre_MiMB_2022.pdf">our recent chapter in <em>Methods in Molecular Biology</em></a>.  Our current <a href="https://marshall-lab.github.io/assets/files/Marshall_lab_DamID-seq_protocol_2021-10-24.pdf">in-house protocol</a> (version 2021-10-24) lists a few additional tips and tricks for NGS homebrew.</p>
 
 <p>These protocols are an evolution from our earlier published work in Southall <em>et al.,</em> <em>Dev cell</em>, 2013; Marshall and Brand, <em>Bioinformatics</em>, 2015; Marshall <em>et al</em>., <em>Nature Protocols</em>, 2016.  If you’re just starting your TaDa journey, those papers may also be useful.</p>
+
+<p><strong>Something that we don’t tend to discuss in our published methods:</strong> TaDa is also extraordinarily easy to use. It requires no antibody purification steps or cell sorting, is highly reproducible and works pretty much every single time. TaDa requires only the most basic familiarity in molecular biology to perform: if you’ve done a restriction enzyme digest and a PCR reaction before, you already know all you need to perform TaDa.</p>
 
 <h2 id="tada-vectors">TaDa vectors</h2>
 
@@ -532,9 +532,17 @@
 
 <p>pTaDaG2 forms the backbone of pFlyORF-TaDa for our <a href="/flyorf-tada.html">FlyORF-TaDa</a> system.</p>
 
-<p>pTaDaM forms the backbone for a membrane-bound fluorophore version of NanoDam.</p>
+<p>pTaDaM forms the backbone for a membrane-bound fluorophore version of <a href="https://doi.org/10.1016/j.devcel.2022.04.008">NanoDam</a>.  Our version of NanoDam also uses the <em>transformer</em> NLS for improved signal.</p>
 
 <p>Vectors and Dam-only control flies are available upon request; if you find them useful, please cite the preprint above.</p>
+
+<h2 id="tada-extensions">TaDa extensions</h2>
+
+<p>Originally, TaDa required cloning and transgenesis for every new protein to be profiled.  However, recent extensions of the technique allow rapid profiling using existing fly resources.</p>
+
+<p><a href="/flyorf-tada.html">FlyORF-TaDa</a> allows existing FlyORF lines to be converted to TaDa lines with a simple cross.</p>
+
+<p><a href="https://doi.org/10.1016/j.devcel.2022.04.008">NanoDam</a> couples Dam to an anti-GFP nanobody to allow profiling of any GFP-fusion line with a simple cross.</p>
 
 <h2 id="notes-on-data-representation">Notes on data representation</h2>
 
