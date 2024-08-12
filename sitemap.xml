@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://marshall-lab.github.io/jekyll/update/2021/06/15/welcome-to-jekyll.html</loc>
-<lastmod>2021-06-15T12:47:22+10:00</lastmod>
-</url>
-<url>
 <loc>https://marshall-lab.github.io/analysis.html</loc>
 </url>
 <url>
@@ -44,5 +40,9 @@
 <url>
 <loc>https://marshall-lab.github.io/assets/files/Marshall_lab_DamID-seq_protocol_2021-10-24.pdf</loc>
 <lastmod>2022-12-21T14:22:14+11:00</lastmod>
+</url>
+<url>
+<loc>https://marshall-lab.github.io/index-1.html</loc>
+<lastmod>2023-07-29T19:12:47+10:00</lastmod>
 </url>
 </urlset>

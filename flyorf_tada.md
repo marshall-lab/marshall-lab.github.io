@@ -6,10 +6,10 @@ FlyORF-TaDa ([Aughey *et al*, G3, 2021](https://academic.oup.com/g3journal/advan
 
 The FlyORF-TaDa lines are now available for order from [Bloomington](https://bdsc.indiana.edu/index.html).
 
-| Stock No. | Genotype                                                                                  | Usage                                                                                                    |
-| --------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| 91637     | w[1118]; M{RFP[3xP3.PB] w[+mC]=UAS-flyORF.TaDa}ZH-86Fb                                    | The base line to use as a Dam-only control (required for all experiments).                               |
-| 91638     | w[1118]; P{y[+t7.7] w[+mC]=hs-FLPD5}attP40; M{RFP[3xP3.PB] w[+mC]=UAS-flyORF.TaDa}ZH-86Fb | The cassette-exchange-ready version of the line with *hs-FlpD5* -- use this to make your new TaDa lines. |
+| Stock No. | Genotype                                                                                  | Usage                                                                                                  |
+|-----------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| 91637     | w[1118]; M{RFP[3xP3.PB] w[\+mC]=UAS-flyORF.TaDa}ZH-86Fb                                    | The base line to use as a Dam-only control (required for all experiments).                             |
+| 91638     | w[1118]; P{y[\+t7.7] w[\+mC]=hs-FLPD5}attP40; M{RFP[3xP3.PB] w[\+mC]=UAS-flyORF.TaDa}ZH-86Fb | The cassette-exchange-ready version of the line with *hs-FlpD5* -- use this to make your new TaDa lines. |
 
 ### Compatible FlyORF lines
 
@@ -19,9 +19,9 @@ We also note that in our experience a few lines that *should* be compatible neve
 
 The following types of lines in the FlyORF database should work with FlyORF-TaDa. **We recommend using the ORF-3xHA lines in preference if available**:
 
-| FlyORF line type | FlyORF plasmid                 | Notes                                                                                                                                                                                                                                                              |
-| ---------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ORF-3xHA         | pGW-HA.attB                    | The majority of FlyORF lines are generated with this plasmid. Use these if available.                                                                                                                                                                              |
+| FlyORF line type | FlyORF plasmid                 | Notes                                                                                                                                                                                                              |
+|------------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ORF-3xHA         | pGW-HA.attB                    | The majority of FlyORF lines are generated with this plasmid. Use these if available.                                                                                                                              |
 | ORF-VN           | pGW-HA.attB + in vivo tag swap | ORF lines with the N-terminal (1-154aa) of mVenus added at the C-terminus of the ORF. These should in theory work, but the C-terminal tag may cause aberrant binding. See [Bischof, *et al*, *Elife*, 2018](https://elifesciences.org/articles/38853) for details. |
 | ORF-VNshort      | pGW-HA.attB + in vivo tag swap | As per the VN lines above, but the VNshort versions have a shorter linker between the ORF and the tag than the "VN" lines. See [Bischof, *et al*, *Elife*, 2018](https://elifesciences.org/articles/38853) for details.                                            |
 
