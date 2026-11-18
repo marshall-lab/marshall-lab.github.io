@@ -78,8 +78,25 @@
     
   
     
-      <!-- add image -->
-      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -110,6 +127,19 @@
     
       <!-- add image -->
       
+    
+  
+    
+      <!-- add image -->
+      
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -240,7 +270,9 @@
   </script>
 
 
+
 <meta charset="utf-8">
+
 
 <!-- begin _includes/seo.html --><title>The Marshall lab</title>
 <meta name="description" content="Epigenetics and systems biology of the brain">
@@ -251,14 +283,15 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="The Marshall lab">
 <meta property="og:title" content="The Marshall lab">
-<meta property="og:url" content="https://marshall-lab.github.io/analysis.html">
+<meta property="og:url" content="http://localhost:39163/analysis.html">
 
 
   <meta property="og:description" content="Epigenetics and systems biology of the brain">
 
 
 
-  <meta property="og:image" content="https://marshall-lab.github.io/random">
+  <meta property="og:image" content="http://localhost:39163/random">
+  
 
 
 
@@ -269,21 +302,14 @@
 
 
 
-<link rel="canonical" href="https://marshall-lab.github.io/analysis.html">
+
+
+<link rel="canonical" href="http://localhost:39163/analysis.html">
 
 
 
 
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    
-      "@type": "Person",
-      "name": "Owen Marshall",
-      "url": "https://marshall-lab.github.io/"
-    
-  }
-</script>
+
 
 
 
@@ -296,19 +322,17 @@
 
 
   <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="The Marshall lab Feed">
-
-
-<!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
 </script>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
 
 
 
@@ -362,6 +386,7 @@
 
 
 
+
 <div class="page__hero--overlay"
   style=" background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/random');"
 >
@@ -380,7 +405,7 @@
       
 
 
-      
+
       
     </div>
   
@@ -389,7 +414,8 @@
 
 
 
- <nav class="skip-links">
+ 
+<nav class="skip-links" aria-label="Skip links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -424,6 +450,10 @@
                             
                                 <li>
                                     <a href="/flyorf-tada.html">    FlyORF-TaDa</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/damidbind.html">    damidBind</a>
                                 </li>
                             
                                 <li>
@@ -491,6 +521,7 @@
   
 
 
+
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     
     <meta itemprop="description" content="Epigenetics and systems biology of the brain">
@@ -504,25 +535,25 @@
         
         <h1 id="software-and-analysis">Software and analysis</h1>
 
-<p>Our research combines wet-lab research with bioinformatic analysis.  All code is open-source and is freely available from <a href="http://github.com">github</a>.</p>
+<p>Our research combines wet-lab research with bioinformatic analysis.  All code is open-source and is freely available from <a href="https://github.com/marshall-lab">github</a>.</p>
 
 <h2 id="featured-software">Featured software</h2>
 
-<h3 id="damidseq_pipeline"><a href="http://owenjm.github.io/damidseq_pipeline">damidseq_pipeline</a></h3>
+<h3 id="damidbind"><a href="https://bioconductor.org/packages/damidBind/">damidBind</a></h3>
 
-<p>The damidseq_pipeline software provides automatic alignment, read-extension, normalisation and background reduction for DamID-seq datasets.</p>
+<p><code class="language-plaintext highlighter-rouge">damidBind</code> completes the TaDa analysis pathway, formalising the downstream differential analysis pipelines for different types of DamID-seq data.  In just a few commands, you can analyse two datasets and browse differentially bound peaks or transcribed genes in an embedded IGV browser, but there’s also a lot of customisation options for power users, if you want to dive under the hood.</p>
 
-<h3 id="poliigenecall"><a href="http://github.com/owenjm/polii.gene.call">polii.gene.call</a></h3>
+<h3 id="damidseq_pipeline"><a href="https://owenjm.github.io/damidseq_pipeline">damidseq_pipeline</a></h3>
 
-<p>The polii.gene.call script will call genes with significantly enriched RNA pol II occupancy.  It is designed for use with Targeted DamID RNA pol II datasets.</p>
+<p><code class="language-plaintext highlighter-rouge">damidseq_pipeline</code> handles automatic alignment, read-extension, normalisation and background reduction for DamID-seq datasets.  It’s the swiss-army-knife of TaDa analysis, over ten years old now and still going strong.  It’ll handle just about anything you throw at it, including generating CATaDa coverage maps and even processing ChIP-seq data.</p>
 
-<h3 id="find_peaks"><a href="http://github.com/owenjm/find_peaks">find_peaks</a></h3>
+<h3 id="find_peaks"><a href="https://github.com/owenjm/find_peaks">find_peaks</a></h3>
 
 <p>find_peaks is a simple yet robust FDR peak caller.  It was designed for use with DamID-seq datasets, but can be used on any file in bedgraph format (including ChIP-seq data).</p>
 
 <h2 id="miscellaneous-code">Miscellaneous code</h2>
 
-<p>For more information and downloads, please visit <a href="http://github.com/owenjm">Owen’s github site</a>.</p>
+<p>For more information and downloads, please visit <a href="https://github.com/marshall-lab">the Marshall Lab’s github site</a>.</p>
 
         
       </section>
@@ -531,8 +562,13 @@
         
         
 
+  
+
+  
+
 
         
+
 
 
       </footer>
@@ -540,6 +576,8 @@
       
 
       
+
+
     </div>
 
     
@@ -558,14 +596,17 @@
         <!-- start custom footer snippets -->
 
 <!-- end custom footer snippets -->
-        <div class="page__footer-follow">
+        
+
+
+<div class="page__footer-follow">
   <ul class="social-icons">
     
 
     
       
         
-          <li><a href="https://twitter.com/OMarshall_lab" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+          <li><a href="https://bsky.app/profile/owenmarshall.bsky.social" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-bluesky" aria-hidden="true"></i> Bluesky</a></li>
         
       
         
@@ -575,18 +616,21 @@
     
 
     
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
     
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 Owen Marshall. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:39163">The Marshall lab</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
     
+
   <script src="/assets/js/main.min.js"></script>
+
 
 
 
